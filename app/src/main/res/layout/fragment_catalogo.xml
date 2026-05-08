@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/background">
+
+<TextView
+    android:id="@+id/txtTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Catálogo"
+    android:textSize="26sp"
+    android:textStyle="bold"
+    android:textColor="@color/text_primary"
+    android:padding="16dp"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Escolha uma categoria"
+    android:textSize="16sp"
+    android:textColor="@color/text_secondary"
+    android:paddingStart="16dp"
+    android:paddingBottom="8dp"/>
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <Button
+            android:id="@+id/btnSUV"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="SUV"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
+            android:layout_marginEnd="12dp"/>
+
+        <Button
+            android:id="@+id/btnEconomicos"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="econômicos"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
+            android:layout_marginEnd="12dp"/>
+
+        <Button
+            android:id="@+id/btnEsportivos"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Esportivos"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
+            android:layout_marginEnd="12dp"/>
+
+        <Button
+            android:id="@+id/btnLuxo"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Modelos de Luxo"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
+            android:layout_marginEnd="12dp"/>
+
+        <Button
+            android:id="@+id/btnEletricos"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="elétricos"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
+            android:layout_marginEnd="12dp"/>
+
+    </LinearLayout>
+</HorizontalScrollView>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/text_secondary"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="8dp"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerCarros"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"/>
+
+</LinearLayout>

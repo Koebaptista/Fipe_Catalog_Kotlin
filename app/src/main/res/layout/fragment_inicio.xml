@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CarMaster"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore os melhores carros do catálogo"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_below="@id/txWelcome"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/imgBanner"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtSubtitle"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/carro_padrao"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/txtHighlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚗 SUVs modernos\n🏎️ Esportivos incríveis\n⚡ Carros elétricos"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_below="@id/imgBanner"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Entrar no Catálogo"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
+            android:layout_below="@id/txtHighlight"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

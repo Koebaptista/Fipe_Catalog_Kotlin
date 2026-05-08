@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".DetalheCarroActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/imgDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⬅ Voltar"
+        android:layout_margin="12dp"
+        android:layout_alignTop="@id/imgDetalhe"
+        android:layout_alignStart="@id/imgDetalhe" />
+
+    <TextView
+        android:id="@+id/txtNomeDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_below="@id/imgDetalhe"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtPrecoDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_below="@id/txtNomeDetalhe"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/txtAnoDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:layout_below="@id/txtPrecoDetalhe"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/txtDescricaoDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:layout_below="@id/txtAnoDetalhe"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkFavoritoDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favoritar?"
+        android:layout_below="@id/txtDescricaoDetalhe"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

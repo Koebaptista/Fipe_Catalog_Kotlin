@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#FF6F00</color> <!-- Laranja principal -->
+    <color name="primary_dark">#E65100</color> <!-- Laranja escuro -->
+    <color name="accent">#FFA726</color> <!-- Destaque -->
+
+    <color name="background">#FFF8F0</color> <!-- Fundo suave -->
+    <color name="card">#FFFFFF</color> <!-- Branco para cards -->
+
+    <color name="text_primary">#212121</color> <!-- Texto principal -->
+    <color name="text_secondary">#757575</color> <!-- Texto secundário -->
+</resources>

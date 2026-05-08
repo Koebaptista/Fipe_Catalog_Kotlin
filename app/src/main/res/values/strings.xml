@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MenuMaster</string>
+
+    <string name="entries">Entradas</string>
+    <string name="dishes">Pratos</string>
+    <string name="desserts">Sobremesas</string>
+    <string name="drinks">Bebidas</string>
+
+    <string name="pizza_pepperoni">Pizza Calabresa</string>
+    <string name="artisanal_hamburger">Hambúrguer Artesanal</string>
+    <string name="special_ice_cream">Sorvete Especial</string>
+    <string name="natural_juice">Suco Natural</string>
+    <string name="button_menu">Conheça Nossos Cardápios</string>
+    <string name="welcome">Seja bem-vindo ao MenuMaster</string>
+
+    <string name="favoritos">Favorito</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
