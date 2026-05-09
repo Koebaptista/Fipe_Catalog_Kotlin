@@ -3,13 +3,24 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="primary">#FF6F00</color> <!-- Laranja principal -->
-    <color name="primary_dark">#E65100</color> <!-- Laranja escuro -->
-    <color name="accent">#FFA726</color> <!-- Destaque -->
+    <!-- Cores principais -->
+    <color name="primary">#1E66FF</color>
+    <color name="primary_dark">#0A2A5E</color>
+    <color name="accent">#00B7FF</color>
 
-    <color name="background">#FFF8F0</color> <!-- Fundo suave -->
-    <color name="card">#FFFFFF</color> <!-- Branco para cards -->
+    <!-- Fundo -->
+    <color name="background">#061A3A</color>
+    <color name="background_secondary">#0A2A5E</color>
 
-    <color name="text_primary">#212121</color> <!-- Texto principal -->
-    <color name="text_secondary">#757575</color> <!-- Texto secundário -->
+    <!-- Cards -->
+    <color name="card">#1B2435</color>
+
+    <!-- Textos -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#FFFFFF</color>
+
+    <!-- Extras -->
+    <color name="highlight">#4DA3FF</color>
+
+
 </resources>

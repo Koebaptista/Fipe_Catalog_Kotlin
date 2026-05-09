@@ -15,6 +15,9 @@ import com.example.fipe_catalog_kotlin.R
 import android.content.Intent
 import com.example.fipe_catalog_kotlin.DetalheCarroActivity
 
+import java.text.NumberFormat
+import java.util.Locale
+
 class CarroAdapter(
     private val lista: List<Carro>,
     private val context: Context,
@@ -43,7 +46,9 @@ class CarroAdapter(
 
         holder.nome.text = carro.nome
         holder.descricao.text = carro.descricao
-        holder.preco.text = "R$ %.2f".format(carro.preco)
+
+        holder.preco.text = formatarPreco(carro.preco)
+
         holder.imagem.setImageResource(carro.imagem)
         holder.ano.text = "📅 Ano: ${carro.ano}"
 
@@ -76,5 +81,11 @@ class CarroAdapter(
                 onFavoritoAlterado?.invoke()
             }
         }
+    }
+    fun formatarPreco(valor: Double): String {
+
+        val formatador = NumberFormat.getCurrencyInstance(Locale("pt", "BR"))
+
+        return formatador.format(valor)
     }
 }

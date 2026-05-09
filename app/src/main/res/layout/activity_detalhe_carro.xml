@@ -67,6 +67,7 @@
         android:id="@+id/checkFavoritoDetalhe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text_secondary"
         android:text="Favoritar?"
         android:layout_below="@id/txtDescricaoDetalhe"
         android:layout_marginTop="16dp" />

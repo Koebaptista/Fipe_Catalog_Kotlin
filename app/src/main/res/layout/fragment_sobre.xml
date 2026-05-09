@@ -6,27 +6,94 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="@color/background">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Card principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Catálogo de Carros"
-        android:textSize="28sp"
-        android:textStyle="bold"/>
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@color/card"
+        android:elevation="6dp"
+        android:layout_margin="8dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Projeto em Kotlin"
-        android:textSize="18sp"
-        android:layout_marginTop="12dp"/>
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚗 FIPE Motors"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_gravity="center"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RecyclerView • Fragments • Bottom Navigation"
-        android:textSize="16sp"
-        android:layout_marginTop="8dp"/>
+        <!-- Subtítulo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sua concessionária digital de veículos"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+        <!-- Linha separadora -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/highlight"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/loc"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Endereço da concessionária -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 Concessionária FIPE Motors\nQuadra 205, Bloco A - Asa Norte\nBrasília - DF, 70740-610"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="4dp"/>
+
+        <!-- Contato -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📞 (61) 99999-9999\n✉ contato@fipemotors.com"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="4dp"/>
+
+        <!-- Horário -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🕒 Atendimento: Seg - Sáb | 08h às 18h"
+            android:textSize="13sp"
+            android:textColor="@color/highlight"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Rodapé -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Versão 1.0"
+            android:textSize="12sp"
+            android:textColor="@color/highlight"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
 
 </LinearLayout>

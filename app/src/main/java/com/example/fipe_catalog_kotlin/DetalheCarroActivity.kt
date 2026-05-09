@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.widget.CheckBox
 import android.widget.Toast
 import android.widget.Button
+import java.text.NumberFormat
+import java.util.Locale
 
 class DetalheCarroActivity : AppCompatActivity() {
 
@@ -32,7 +34,7 @@ class DetalheCarroActivity : AppCompatActivity() {
         txtDescricao.text = descricao
         img.setImageResource(imagem)
 
-        txtPreco.text = "R$ %.2f".format(preco)
+        txtPreco.text = formatarPreco(preco)
 
         txtAno.text = "📅 Ano: $ano"
 
@@ -57,6 +59,12 @@ class DetalheCarroActivity : AppCompatActivity() {
                 Toast.makeText(this, "$nome removido dos favoritos", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+    fun formatarPreco(valor: Double): String {
+
+        val formatador = NumberFormat.getCurrencyInstance(Locale("pt", "BR"))
+
+        return formatador.format(valor)
     }
 }
 
