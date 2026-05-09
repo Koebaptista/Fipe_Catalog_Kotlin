@@ -60,6 +60,16 @@ class DetalheCarroActivity : AppCompatActivity() {
             }
         }
     }
+
+    override fun onStart() {
+        super.onStart()
+        Toast.makeText(this, "Detalhes carregados", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        android.util.Log.d("CICLO", "Saiu da tela de detalhes")
+    }
     fun formatarPreco(valor: Double): String {
 
         val formatador = NumberFormat.getCurrencyInstance(Locale("pt", "BR"))

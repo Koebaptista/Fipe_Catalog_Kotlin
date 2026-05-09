@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import com.example.fipe_catalog_kotlin.R
 import com.example.fipe_catalog_kotlin.MainActivity
 
+import android.widget.Toast
 class InicioFragment : Fragment() {
 
     override fun onCreateView(
@@ -36,5 +37,11 @@ class InicioFragment : Fragment() {
             }
 
         return view
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        (activity as MainActivity).esconderBottomNavigation()
     }
 }

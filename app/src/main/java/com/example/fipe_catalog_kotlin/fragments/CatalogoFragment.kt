@@ -16,6 +16,8 @@ class CatalogoFragment : Fragment() {
 
     lateinit var recycler: RecyclerView
 
+    var categoriaAtual = "todos"
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -34,26 +36,36 @@ class CatalogoFragment : Fragment() {
         carregarCategoria("todos")
 
         view.findViewById<Button>(R.id.btnSUV).setOnClickListener {
-            carregarCategoria("suv")
+            categoriaAtual = "suv"
+            carregarCategoria(categoriaAtual)
         }
 
         view.findViewById<Button>(R.id.btnEconomicos).setOnClickListener {
-            carregarCategoria("economicos")
+            categoriaAtual = "economicos"
+            carregarCategoria(categoriaAtual)
         }
 
         view.findViewById<Button>(R.id.btnEsportivos).setOnClickListener {
-            carregarCategoria("esportivos")
+            categoriaAtual = "esportivos"
+            carregarCategoria(categoriaAtual)
         }
 
         view.findViewById<Button>(R.id.btnLuxo).setOnClickListener {
-            carregarCategoria("luxo")
+            categoriaAtual = "luxo"
+            carregarCategoria(categoriaAtual)
         }
 
         view.findViewById<Button>(R.id.btnEletricos).setOnClickListener {
-            carregarCategoria("eletricos")
+            categoriaAtual = "eletricos"
+            carregarCategoria(categoriaAtual)
         }
 
         return view
+    }
+
+    override fun onResume() {
+        super.onResume()
+        carregarCategoria(categoriaAtual)
     }
 
     fun carregarCategoria(cat: String){
@@ -65,4 +77,5 @@ class CatalogoFragment : Fragment() {
             requireContext()
         )
     }
+
 }

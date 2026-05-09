@@ -87,4 +87,14 @@ class FavoritosFragment : Fragment() {
             atualizarLista()
         }
     }
+
+    override fun onResume() {
+        super.onResume()
+        atualizarLista()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        // simula pausa de atualização de dados
+    }
 }
